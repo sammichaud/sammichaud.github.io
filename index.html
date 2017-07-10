@@ -1,11 +1,11 @@
 <html>
 <head>
   <title>Programme Carte d'accès</title>
-  <script>
-    function btnClick(){
-      alert("ON button click");
+  <script type="text/javascript">
+    function showAndroidToast(toast) {
+        Android.showToast(toast);
     }
-  </script>
+</script>
 </head>
-  <button onclick="btnClick()">Hello </button>
+  <input type="button" value="Say hello" onClick="showAndroidToast('Hello Android!')" />
 </html>
