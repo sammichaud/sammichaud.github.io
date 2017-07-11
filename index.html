@@ -2,14 +2,19 @@
 <head>
   <title>Programme Carte d'accès</title>
   <script type="text/javascript">
-    function showAndroid() {
+    function Write() {
       var timestamp = 1500000000;
       var tag = [0, 32, 34, 96];
       var key = [0x92, 0x77, 0x14, 0xAB, 0x73, 0x8C, 0xB1, 0xD4, 0x75, 0x08, 0x84, 0x6F, 0x30, 0x4F, 0xDE, 0xB1];
       var key2 = [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00];
         Android.programTag(timestamp, tag, key2);
     }
+
+    function Unlock(){
+      Android.liberer();      
+    }
 </script>
 </head>
-  <input type="button" value="Ecrire" onClick="showAndroid()" />
+  <input type="button" value="Ecrire" onClick="Write()" />
+  <input type="button" value="Unlock" onClick="Unlock()" />
 </html>
